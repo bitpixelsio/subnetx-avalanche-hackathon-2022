@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  grid-auto-rows: minmax(min-content, max-content);
+
+  flex-grow: 1;
+}

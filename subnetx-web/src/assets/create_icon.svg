@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102">
+    <g id="_4781840___add_circle_create_expand_icon"
+       transform="translate(0 0.417)">
+        <g id="Layer_2" transform="translate(9.523 9.523)">
+            <path id="Path_4093"
+                  d="M44.268,85.537A41.268,41.268,0,1,1,85.537,44.268,41.268,41.268,0,0,1,44.268,85.537Zm0-76.188A34.919,34.919,0,1,0,79.188,44.268,34.919,34.919,0,0,0,44.268,9.349Z"
+                  transform="translate(-3 -3)" fill="current"/>
+            <path id="Path_4094"
+                  d="M18.174,53.443A3.174,3.174,0,0,1,15,50.268V12.174a3.174,3.174,0,1,1,6.349,0V50.268A3.174,3.174,0,0,1,18.174,53.443Z"
+                  transform="translate(23.094 10.047)" fill="current"/>
+            <path id="Path_4095"
+                  d="M50.268,21.349H12.174a3.174,3.174,0,0,1,0-6.349H50.268a3.174,3.174,0,0,1,0,6.349Z"
+                  transform="translate(10.047 23.094)" fill="current"/>
+        </g>
+        <g id="frame">
+            <rect id="Rectangle_1291" width="102" height="102"
+                  transform="translate(0 -0.417)" fill="none"/>
+        </g>
+    </g>
+</svg>

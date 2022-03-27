@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "prod": "dfk-runner"
+  },
+  "targets": {
+    "dfk-runner": {
+      "hosting": {
+        "subnet-ui": [
+          "subnet-ui"
+        ]
+      }
+    }
+  }
+}

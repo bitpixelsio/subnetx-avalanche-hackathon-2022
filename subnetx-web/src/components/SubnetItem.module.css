@@ -1,0 +1,35 @@
+.root {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 3px;
+  color: var(--text-color);
+}
+
+.root {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.info > *:nth-child(2n + 0) {
+  text-align: right;
+  font-weight: bold;
+}
+.info > *:nth-child(2n + 1) {
+  text-align: left;
+}
+
+.subnetId {
+  font-weight: bold;
+}

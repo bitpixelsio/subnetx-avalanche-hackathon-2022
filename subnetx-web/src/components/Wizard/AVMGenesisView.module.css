@@ -1,0 +1,31 @@
+.root {
+
+}
+
+.asset {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+
+  border-color: black;
+  border-style: dashed;
+  border-width: 1px;
+}
+
+.cap {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+
+  border-color: black;
+  border-style: dashed;
+  border-width: 1px;
+}
+
+.root :global(.MuiAccordionSummary-content) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

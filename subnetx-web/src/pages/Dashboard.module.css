@@ -1,0 +1,20 @@
+.root {
+  padding: 20px;
+}
+
+.subnet_grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat( auto-fit, 300px );
+  justify-content: space-between;
+}
+
+.root h2 {
+  display: inline-flex;
+  align-items: center;
+}
+
+.root h2 > svg {
+  fill: var(--text-color);
+  padding-right: 5px;
+}

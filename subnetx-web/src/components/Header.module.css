@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 5px;
+}
+
+.divider {
+  background-color: var(--main-tint-color);
+  width: 100%;
+  height: 2px;
+}
+
+.connect {
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+}
+
+.connect > *:nth-child(1) {
+  width: 200px;
+}
+
+.connect > *:nth-child(2) {
+  width: 200px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+}

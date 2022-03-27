@@ -1,0 +1,51 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "./node_modules/.bin/tslint -p tsconfig.json",
+    "build": "npm run copy && tsc",
+    "serve": "npm run build && firebase use dfkrunner && firebase functions:config:get > .runtimeconfig.json && firebase serve --only functions -p 5002  -o 0.0.0.0",
+    "emulator": "npm run build && firebase use dfkrunner && firebase functions:config:get > .runtimeconfig.json &&  firebase emulators:start --only functions --inspect-functions 5050",
+    "shell": "npm run build && firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deployTest": "firebase use dfkrunner && firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "copy": "copyfiles -u 1 src/**/*.json lib/",
+    "setConfigs": "firebase use dfkrunner && firebase functions:config:set app.env=prod && firebase functions:config:set cron.key=REDACTED && firebase functions:config:set app.package_name=dfkrunner",
+    "update": "npm install firebase-functions@latest firebase-admin@latest --save && npm install -g firebase-tools",
+    "cronKeyGen": "node -e \"console.log(require('crypto').randomBytes(20).toString('hex'))\""
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@firebase/app": "0.6.5",
+    "@firebase/functions": "0.4.45",
+    "@google-cloud/firestore": "5.0.1",
+    "@google-cloud/pubsub": "2.18.4",
+    "crypto": "^1.0.1",
+    "eth-sig-util": "^3.0.1",
+    "ethereum-checksum-address": "^0.0.7",
+    "firebase-admin": "^10.0.1",
+    "firebase-functions": "^3.18.0",
+    "googleapis": "92.0.0",
+    "keccak256": "^1.0.6",
+    "randomstring": "1.2.1",
+    "request": "2.88.2",
+    "secure-compare": "3.0.1",
+    "web3": "^1.6.1",
+    "p-queue": "^6.6.2",
+    "pg": "8.7.1",
+    "pg-format": "^1.0.4",
+    "sequelize": "6.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.0",
+    "@types/request": "2.48.7",
+    "copyfiles": "2.4.1",
+    "ts-node": "10.4.0",
+    "tslint": "6.1.2",
+    "typescript": "4.5.4"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "private": true
+}

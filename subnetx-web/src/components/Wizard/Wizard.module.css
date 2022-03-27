@@ -1,0 +1,47 @@
+.root {
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.root h1 {
+  font-weight: normal;
+}
+
+.root > *:first-child {
+  max-height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.root > *:first-child > *:nth-child(1) {
+  text-align: center;
+}
+
+.root > *:first-child > *:nth-child(2) {
+  flex-grow: 1;
+}
+
+.progress {
+  padding-top: 3px;
+  display: flex;
+  flex-direction: row;
+  font-size: 70%;
+  align-items: center;
+  gap: 3px;
+  justify-content: space-evenly;
+}
+
+.progress .selected {
+  color: var(--main-tint-color);
+}
+
+.progress > svg {
+  flex-shrink: 1;
+}

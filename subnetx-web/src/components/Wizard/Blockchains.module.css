@@ -1,0 +1,46 @@
+.root {
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.info h2 {
+  display: inline-flex;
+  align-items: center;
+}
+
+.info h2 > svg {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+  padding-right: 5px;
+}
+
+.list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 5px;
+}
+
+.list > * {
+  height: 30px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 3px;
+
+  display: flex;
+  align-items: center;
+}
+
+.vm{
+  font-style: italic;
+  padding-left: 5px;
+}
